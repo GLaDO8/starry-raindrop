@@ -35,6 +35,7 @@ export const main = async () => {
       collectionId: process.env.RAINDROP_COLLECTION_ID,
       title: star.repo.full_name,
       link: star.repo.html_url,
+      excerpt: star.repo.description,
       tags: _([
         "github",
         star.repo.language || undefined,
